@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechSolutions — Новини</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <div id="navOverlay" class="nav-overlay"></div>
+    <a href="index.html" class="logo" aria-label="На головну">TS</a>
+
+    <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+    <nav>
+          <a href="index.html"     class="mega-link" data-pane="home">Головна</a>
+  <a href="about.html"     class="mega-link" data-pane="about">Про нас</a>
+  <a href="services.html"  class="mega-link" data-pane="services">Послуги</a>
+  <a href="contacts.html"  class="mega-link" data-pane="contacts">Контакти</a>
+  <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+  <a href="news.html"      class="mega-link" data-pane="news">Новини</a>
+    </nav>
+  </header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+  <section class="parallax-banner banner-dev" style="height:55vh">
+    <div class="hero-inner">
+      <h1>Блог / новини</h1>
+      <p>Огляди технологій, гіди та анонси від команди TechSolutions</p>
+    </div>
+  </section>
+
+  <main class="section reveal-up">
+    <h2 class="section-title">Останні публікації</h2>
+
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <span class="blog-date">12 червня 2025</span>
+        <h3  class="blog-title">CI/CD як сервіс: чому це вигідно для SMB-компаній?</h3>
+        <p   class="blog-excerpt">
+          Пояснюємо, як ми налаштовуємо GitHub Actions + Terraform
+          без зайвих ліцензій та людських помилок…
+        </p>
+        <a  class="blog-more" href="#">Читати далі ›</a>
+      </article>
+
+      <article class="blog-card">
+        <span class="blog-date">2 червня 2025</span>
+        <h3  class="blog-title">Zero-trust-мережі — quick-start гайд від наших SRE</h3>
+        <p   class="blog-excerpt">
+          Чому perimeter-security вже не працює та як перейти
+          на модель «нікому не довіряй» за 10 кроків.
+        </p>
+        <a  class="blog-more" href="#">Читати далі ›</a>
+      </article>
+
+      <article class="blog-card">
+        <span class="blog-date">20 травня 2025</span>
+        <h3  class="blog-title">Kubernetes v1.30: що нового та як безпечно оновитись</h3>
+        <p   class="blog-excerpt">
+          Розбираємо нові API-групи, kube-scheduler v2
+          та best-practice міграції production-кластерів.
+        </p>
+        <a  class="blog-more" href="#">Читати далі ›</a>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="apple-footer">
+    <div class="footer-copy">© 2025 TechSolutions Inc.</div>
+  </footer>
+
+</body>
+</html>

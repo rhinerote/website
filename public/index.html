@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>TechSolutions — Головна</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+<body>
+    <header class="topbar">
+        <div id="navOverlay" class="nav-overlay"></div>
+        <a href="index.html" class="logo" aria-label="На головну">TS</a>
+
+    <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+        <nav>
+            <a href="index.html"  class="mega-link" data-pane="home">Головна</a>
+            <a href="about.html"  class="mega-link" data-pane="about">Про нас</a>
+            <a href="services.html" class="mega-link" data-pane="services">Послуги</a>
+            <a href="contacts.html" class="mega-link" data-pane="contacts">Контакти</a>
+            <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+            <a href="news.html"   class="mega-link" data-pane="news">Новини</a>
+        </nav>
+    </header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+<section class="parallax-banner hero" id="home">
+    <div class="hero-inner">
+        <h1>TechSolutions</h1>
+        <p>Повний цикл ІТ-послуг</p>
+        <a href="#services" class="btn">Наші послуги</a>
+    </div>
+</section>
+
+<section class="promo-split">
+    <article class="panel dark">
+        <h3 class="kicker">TechSolutions PRO</h3>
+        <h2 class="headline">Рішення «під ключ»<br>для будь-якого масштабу</h2>
+        <p class="price">від $299 / місяць</p>
+
+        <div class="btn-row">
+            <a href="#contact" class="btn">Зaмовити</a>
+            <a href="#learn-more" class="more">Дізнатися більше ›</a>
+        </div>
+
+        <img src="img/pro-dark.png" alt="" class="hero-img">
+    </article>
+
+    <article class="panel light">
+        <h3 class="kicker">TechSolutions Start</h3>
+        <h2 class="headline">Ідеальний старт<br>для малого бізнесу</h2>
+        <p class="price">від $99 / місяць</p>
+
+        <div class="btn-row">
+            <a href="#contact" class="btn">Зaмовити</a>
+            <a href="#learn-more" class="more">Дізнатися більше ›</a>
+        </div>
+
+        <img src="img/pro-light.png" alt="" class="hero-img">
+    </article>
+</section>
+
+<section class="smart-home parallax-banner smart-bg" id="learn-more">
+    <h2 class="smart-title reveal-up">Кожна причина довірити IT-інфраструктуру професіоналам.</h2>
+
+    <div class="feature-grid">
+        <article class="feature-card reveal-up">
+            <h3 class="card-head">Історія компанії.</h3>
+            <p class="card-brief"><button class="learn-btn">Дізнатися більше ›</button></p>
+            <p class="card-full">
+                Компанія TechSolutions на ринку з 2014 р., понад 150 успішних
+                проєктів — від e-commerce до логістичних платформ. Наша команда
+                <strong>certified AWS & Google Cloud</strong>-інженерів
+                вибудовує архітектуру «під ключ» та супроводжує 24/7.
+            </p>
+            <img src="img/photo3.png" alt="" class="card-icon">
+        </article>
+
+        <article class="feature-card reveal-up">
+            <h3 class="card-head">Глобальна підтримка 24/7.</h3>
+            <p class="card-brief"><button class="learn-btn">Дізнатися більше ›</button></p>
+            <p class="card-full">
+                Три Service Desk-центри (США, ЄС, Азія) дозволяють
+                реагувати <em>≤ 15 хв</em>. Працюємо за ITIL-процедурами,
+                маємо власний SOC для безпеки.
+            </p>
+            <img src="img/photo4.png" alt="" class="card-icon">
+        </article>
+
+        <article class="feature-card reveal-up">
+            <h3 class="card-head">Безпека та приватність.</h3>
+            <p class="card-brief"><button class="learn-btn">Дізнатися більше ›</button></p>
+            <p class="card-full">
+                ISO 27001, GDPR-ready процеси, zero-trust-мережа та постійний
+                пен-тест. Ваші дані захищені на кожному етапі.
+            </p>
+            <img src="img/photo5.png" alt="" class="card-icon">
+        </article>
+
+        <article class="feature-card reveal-up">
+            <h3 class="card-head">Сила AI-автоматизації.</h3>
+            <p class="card-brief"><button class="learn-btn">Дізнатися більше ›</button></p>
+            <p class="card-full">
+                Впроваджуємо ML-моделі для прогнозу навантажень,
+                автоматичного масштабування та чат-боти для customer care.
+            </p>
+            <img src="img/photo6.png" alt="" class="card-icon">
+        </article>
+
+    </div>
+</section>
+
+<section id="services" class="section reveal-up">
+    <h2 class="section-title">Наші послуги</h2>
+
+    <div class="service-banner gradient-a">
+        <div class="plan-grid">
+            <article class="plan-card"><h3 class="plan-name">Розробка веб-сайтів</h3><p class="plan-desc">React / Next, адаптив, CI·CD, multi-lang.</p>         <img class="service-icon bottom" src="img/photo7.png" alt="" /> </article>
+            <article class="plan-card"><h3 class="plan-name">SEO-оптимізація</h3><p class="plan-desc">Core Web Vitals 90+, semantic SEO, Schema.org.</p> <img class="service-icon bottom" src="img/photo8.png" alt="" /></article>
+            <article class="plan-card"><h3 class="plan-name">Хмарні рішення</h3><p class="plan-desc">AWS & GCP, IaC (Terraform), авто-масштабування.</p> <img class="service-icon bottom" src="img/photo9.png" alt="" /></article>
+        </div>
+        <p class="banner-note">* Доступно в рамках підписки PRO та вище.</p>
+    </div>
+
+    <div class="service-banner gradient-b">
+        <div class="plan-grid">
+            <article class="plan-card"><h3 class="plan-name">Підтримка / SRE</h3><p class="plan-desc">Service Desk ≤15 хв, патч-менеджмент, міграції.</p>  <img class="service-icon bottom" src="img/photo10.png" alt="" /></article>
+            <article class="plan-card"><h3 class="plan-name">DevOps консалтинг</h3><p class="plan-desc">CI / CD, Kubernetes, Observability (ELK + Grafana).</p>  <img class="service-icon bottom" src="img/photo11.png" alt="" /></article>
+            <article class="plan-card"><h3 class="plan-name">Мобільні додатки</h3><p class="plan-desc">Flutter & React Native, push-сервіси, ASO.</p>  <img class="service-icon bottom" src="img/photo12.png" alt="" /></article>
+        </div>
+        <p class="banner-note">* Вартість формується індивідуально після аудиту.</p>
+    </div>
+</section>
+
+<div class="metal-gap"></div>
+
+<section id="pricing" class="section pricing-banner gradient-c reveal-up">
+    <h2 class="section-title">Наші<br>тарифи</h2>
+
+    <div class="plan-grid">
+        <article class="plan-card">
+            <h3 class="plan-name">Базовий</h3>
+            <p class="plan-price"><span>1 000</span> грн / міс</p>
+            <ul class="plan-features">
+            <li>Підтримка сайту</li><li>SSL-сертифікат</li><li>Щоденний бекап</li>
+            </ul>
+            <a href="#" class="btn small">Обрати</a>
+        </article>
+
+        <article class="plan-card popular">
+            <h3 class="plan-name">Професійний</h3>
+            <p class="plan-price"><span>3 000</span> грн / міс</p>
+            <ul class="plan-features">
+            <li>SEO + підтримка</li><li>Uptime 24 / 7</li><li>Щотижневий аудит</li>
+            </ul>
+            <a href="#" class="btn">Обрати</a>
+        </article>
+
+        <article class="plan-card">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-price"><span>Індивідуально</span></p>
+            <ul class="plan-features">
+            <li>Виділений SRE-тим</li><li>Безлімітні міграції</li><li>SLA ≤ 5 хв</li>
+            </ul>
+            <a href="#" class="btn small">Звʼязатися</a>
+        </article>
+
+        <article class="plan-card">
+            <h3 class="plan-name">Startup</h3>
+            <p class="plan-price"><span>500</span> грн / міс</p>
+            <ul class="plan-features">
+            <li>Хостинг + CDN</li><li>Email-support</li><li>1 домашня міграція</li>
+            </ul>
+            <a href="#" class="btn small">Обрати</a>
+        </article>
+    </div>
+
+    <p class="banner-note">* Усі плани включають цілодобовий моніторинг та backup-реплікацію.</p>
+</section>
+
+<section class="parallax-banner banner-partners">
+    <div class="partners-inner">
+        <h2 class="partner-title">Наші партнери</h2>
+
+        <div class="logo-marquee">
+            <div class="logo-track">
+                <img src="img/microsoft.png"  alt="Microsoft">
+                <img src="img/aws.png"        alt="AWS">
+                <img src="img/google-cloud.png" alt="Google Cloud">
+                <img src="img/docker.png"     alt="Docker">
+                <img src="img/kubernetes.png" alt="Kubernetes">
+                <img src="img/atlassian.png"  alt="Atlassian">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="messages" class="feedback reveal-up">
+    <h2 class="feedback-title">Відгуки клієнтів</h2>
+
+    <div class="testimonial-track" id="track">
+        <article class="testimonial">
+            <img class="avatar" src="img/author1.jpg" alt="">
+            <svg class="quotes" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M14 4h-6l-6 10v14h12V14H8.6l3.4-6h2V4zm20 0h-6l-6 10v14h12V14h-5.4l3.4-6h2V4z"/>
+            </svg>
+            <h3 class="author">Олександр Шевченко</h3>
+            <p class="text">“Робота сервісу — на найвищому рівні! Раджу всім.”</p>
+        </article>
+
+    </div>
+
+    <button class="nav prev" id="prev">‹</button>
+    <button class="nav next" id="next">›</button>
+
+    <form id="messageForm" class="feedback-form">
+
+        <div class="form-grid">
+            <input  id="firstName" type="text"  placeholder="Ім’я"        required>
+            <input  id="lastName"  type="text"  placeholder="Прізвище"   required>
+            <input  id="phone"     type="tel"   placeholder="Телефон"    required>
+            <input  id="email"     type="email" placeholder="Email"      required>
+            <textarea id="text"    rows="3"     placeholder="Ваш відгук" required></textarea>
+        </div>
+
+        <button type="submit" class="btn submit">Надіслати</button>
+    </form>
+</section>
+
+<script>
+async function fetchMessages() {
+const res = await fetch('/api/messages');
+const messages = await res.json();
+const list = document.getElementById('messageList');
+list.innerHTML = '';
+messages.forEach(msg => {
+    const li = document.createElement('li');
+    li.textContent = msg.text;
+
+    const btn = document.createElement('button');
+    btn.textContent = 'Видалити';
+    btn.className  = 'message-delete';
+    btn.onclick = async () => {
+      await fetch(`/api/messages/${msg._id}`, { method: 'DELETE' });
+      await fetchMessages();
+    };
+
+    li.appendChild(btn);
+    list.appendChild(li);
+});
+}
+
+window.addEventListener('DOMContentLoaded', fetchMessages);
+
+document.getElementById('messageForm').addEventListener('submit', async function (e) {
+e.preventDefault();
+const text = document.getElementById('text').value;
+
+await fetch('/api/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text })
+});
+
+    document.getElementById('text').value = '';
+    await fetchMessages();
+});
+</script>
+
+
+<footer class="apple-footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Продукти</h4>
+            <ul>
+                <li><a href="#">Веб-сайти</a></li>
+                <li><a href="#">Хостинг</a></li>
+                <li><a href="#">DevOps</a></li> 
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Рішення</h4>
+            <ul>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">FinTech</a></li>
+                <li><a href="#">Logistics</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Компанія</h4>
+            <ul>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Кар’єра</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Підтримка</h4>
+            <ul>
+                <li><a href="#">Knowledge Base</a></li>
+                <li><a href="#">Service Desk</a></li>
+                <li><a href="#">Status Page</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2025 TechSolutions Inc.  Всі права захищені.
+    </div>
+</footer>
+</body>
+</html>

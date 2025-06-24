@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechSolutions — Портфоліо</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div id="navOverlay" class="nav-overlay"></div>
+    <a href="index.html" class="logo" aria-label="На головну">TS</a>
+
+  <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+    <nav>
+  <a href="index.html"     class="mega-link" data-pane="home">Головна</a>
+  <a href="about.html"     class="mega-link" data-pane="about">Про нас</a>
+  <a href="services.html"  class="mega-link" data-pane="services">Послуги</a>
+  <a href="contacts.html"  class="mega-link" data-pane="contacts">Контакти</a>
+  <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+  <a href="news.html"      class="mega-link" data-pane="news">Новини</a>
+    </nav>
+  </header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+  <section class="parallax-banner banner-dev" style="height:65vh">
+    <div class="hero-inner">
+      <h1>Наші кейси</h1>
+      <p>Від MVP‑стартапів до мульти‑регіональних платформ</p>
+    </div>
+  </section>
+
+  <main class="section reveal-up" style="padding-bottom:100px">
+    <h2 class="section-title">Недавні проєкти</h2>
+
+    <div class="project-grid" style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));max-width:1200px;margin:0 auto">
+
+      <article class="project-card" style="background:#fff;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;transition:.35s transform,.35s box-shadow">
+        <img src="img/case-b2c.webp" alt="Онлайн-магазин" style="width:100%;height:200px;object-fit:cover">
+        <div style="padding:28px 24px;flex:1;display:flex;flex-direction:column">
+          <h3 style="font:600 20px/1.25 var(--apple-font);margin-bottom:6px;color:#1d1d1f">Інтернет-магазин (B2C)</h3>
+          <p style="font-size:15px;color:#565656;line-height:1.55;margin-bottom:12px">Next.js + Shopify, інтеграція оплати й складу.</p>
+          <ul style="list-style:none;padding:0;margin:0 0 20px;font-size:14px;color:#5f5f63;line-height:1.45">
+            <li>⚡ Core Web Vitals 95+</li>
+            <li>💳 Stripe Checkout</li>
+            <li>📈 +18 % конверсії</li>
+          </ul>
+          <a href="#" class="btn small" style="align-self:flex-start">Детальніше</a>
+        </div>
+      </article>
+
+      <article class="project-card" style="background:#fff;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;transition:.35s transform,.35s box-shadow">
+        <img src="img/case-logistics.webp" alt="Хмарний сервіс логістики" style="width:100%;height:200px;object-fit:cover">
+        <div style="padding:28px 24px;flex:1;display:flex;flex-direction:column">
+          <h3 style="font:600 20px/1.25 var(--apple-font);margin-bottom:6px;color:#1d1d1f">Хмарна логістика</h3>
+          <p style="font-size:15px;color:#565656;line-height:1.55;margin-bottom:12px">GPS-трекінг і аналітика в реальному часі (AWS EKS).</p>
+          <ul style="list-style:none;padding:0;margin:0 0 20px;font-size:14px;color:#5f5f63;line-height:1.45">
+            <li>🔄 99.98 % uptime</li>
+            <li>📦 100k подій/день</li>
+            <li>☁️ IaC Terraform</li>
+          </ul>
+          <a href="#" class="btn small" style="align-self:flex-start">Детальніше</a>
+        </div>
+      </article>
+
+      <article class="project-card" style="background:#fff;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;transition:.35s transform,.35s box-shadow">
+        <img src="img/case-banking.webp" alt="Мобільний банкінг" style="width:100%;height:200px;object-fit:cover">
+        <div style="padding:28px 24px;flex:1;display:flex;flex-direction:column">
+          <h3 style="font:600 20px/1.25 var(--apple-font);margin-bottom:6px;color:#1d1d1f">Мобільний банкінг</h3>
+          <p style="font-size:15px;color:#565656;line-height:1.55;margin-bottom:12px">Flutter-додаток: платежі, бюджет, push-нотифікації.</p>
+          <ul style="list-style:none;padding:0;margin:0 0 20px;font-size:14px;color:#5f5f63;line-height:1.45">
+            <li>🔐 PCI DSS Lvl 1</li>
+            <li>🚀 T-to-market 4 міс</li>
+            <li>👥 150k MAU</li>
+          </ul>
+          <a href="#" class="btn small" style="align-self:flex-start">Детальніше</a>
+        </div>
+      </article>
+
+      <article class="project-card" style="background:#fff;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;transition:.35s transform,.35s box-shadow">
+        <img src="img/case-forecast.webp" alt="AI Forecasting" style="width:100%;height:200px;object-fit:cover">
+        <div style="padding:28px 24px;flex:1;display:flex;flex-direction:column">
+          <h3 style="font:600 20px/1.25 var(--apple-font);margin-bottom:6px;color:#1d1d1f">AI-прогноз продажів</h3>
+          <p style="font-size:15px;color:#565656;line-height:1.55;margin-bottom:12px">Vertex AI + Looker Studio, точність MAPE 3.7 %.</p>
+          <ul style="list-style:none;padding:0;margin:0 0 20px;font-size:14px;color:#5f5f63;line-height:1.45">
+            <li>📊 MAPE ≤ 3.7 %</li>
+            <li>⏱ Retrain 24 г</li>
+            <li>⚙️ Auto-Scaling GKE</li>
+          </ul>
+          <a href="#" class="btn small" style="align-self:flex-start">Детальніше</a>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="apple-footer">
+    <div class="footer-copy">© 2025 TechSolutions Inc.</div>
+  </footer>
+</body>
+</html>

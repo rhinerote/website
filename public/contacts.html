@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechSolutions — Контакти</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const f = document.getElementById('contactForm');
+      f?.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Дякуємо! Ми звʼяжемося з вами найближчим часом.');
+        f.reset();
+      });
+    });
+  </script>
+</head>
+
+<body class="contacts-page">
+
+  <header class="topbar">
+    <div id="navOverlay" class="nav-overlay"></div>
+        <a href="index.html" class="logo" aria-label="На головну">TS</a>
+    <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+    <nav>
+  <a href="index.html"     class="mega-link" data-pane="home">Головна</a>
+  <a href="about.html"     class="mega-link" data-pane="about">Про нас</a>
+  <a href="services.html"  class="mega-link" data-pane="services">Послуги</a>
+  <a href="contacts.html"  class="mega-link" data-pane="contacts">Контакти</a>
+  <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+  <a href="news.html"      class="mega-link" data-pane="news">Новини</a>
+    </nav>
+  </header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+  <section class="contact-hero reveal-up">
+    <div class="contact-hero-inner">
+      <h2>Контакти TechSolutions</h2>
+      <p>24/7 Service Desk, офіси в США, ЄС та Азії</p>
+      <a href="#contact-form" class="btn big">Написати нам</a>
+    </div>
+  </section>
+
+  <section class="contact-info section reveal-up">
+    <div class="info-grid">
+      <div>
+        <h3>Офіс у Києві</h3>
+        <p>вул. Січових Стрільців, 21А<br>Київ, 04053, Україна</p>
+        <p><strong>Телефон:</strong> +38 044 333-12-34</p>
+        <p><strong>Email:</strong> hello@techsolutions.ua</p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          title="Наш офіс на мапі"
+          src="https://maps.google.com/maps?q=50.4601,30.5196&z=15&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form" class="contact-form-wrap reveal-up">
+    <h2 class="section-title">Напишіть нам</h2>
+
+    <div class="card shadow">
+      <form id="contactForm" class="contact-form">
+        <div class="form-grid">
+          <input  type="text"  placeholder="Ваше ім’я"       required>
+          <input  type="email" placeholder="Email"           required>
+          <input  type="tel"   placeholder="Телефон"         required>
+          <input  type="text"  placeholder="Тема"            required>
+          <textarea rows="4"   placeholder="Повідомлення…"   required></textarea>
+        </div>
+        <button class="btn submit">Надіслати запит</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="apple-footer">
+    <div class="footer-inner"></div>
+    <div class="footer-copy">© 2025 TechSolutions Inc.</div>
+  </footer>
+</body>
+</html>

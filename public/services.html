@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechSolutions — Послуги</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div id="navOverlay" class="nav-overlay"></div>
+    <a href="index.html" class="logo" aria-label="На головну">TS</a>
+
+    <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+  <nav>
+  <a href="index.html"     class="mega-link" data-pane="home">Головна</a>
+  <a href="about.html"     class="mega-link" data-pane="about">Про нас</a>
+  <a href="services.html"  class="mega-link" data-pane="services">Послуги</a>
+  <a href="contacts.html"  class="mega-link" data-pane="contacts">Контакти</a>
+  <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+  <a href="news.html"      class="mega-link" data-pane="news">Новини</a>
+  </nav>
+</header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+<main class="page">
+<section class="parallax-banner banner-dev" style="height:65vh">
+  <div class="hero-inner">
+    <h1>Послуги TechSolutions</h1>
+    <p>Веб-розробка, хмари, DevOps та підтримка 24 / 7.</p>
+    <a href="#demo" class="btn big">Замовити демо</a>
+  </div>
+</section>
+
+<section class="demo-cta reveal-up" id="demo">
+  <div class="demo-wrap">
+
+    <header class="demo-head">
+      <h2>Замовити <span>Live&nbsp;Demo</span></h2>
+      <p>Заповніть форму&nbsp;— отримаєте персональний доступ
+         до тестового оточення, де ми покажемо всі можливості
+         пакету, який вас цікавить.</p>
+    </header>
+
+    <form id="demoForm" class="demo-form">
+      <div class="demo-col">
+        <label>
+          <span>Компанія *</span>
+          <input type="text"   name="company"   required>
+        </label>
+
+        <label>
+          <span>Контактна особа *</span>
+          <input type="text"   name="person"    required>
+        </label>
+
+        <label>
+          <span>E-mail *</span>
+          <input type="email"  name="email"     required>
+        </label>
+
+        <label>
+          <span>Телефон</span>
+          <input type="tel"    name="phone"     placeholder="+38-0XX-XXX-XX-XX">
+        </label>
+      </div>
+
+      <div class="demo-col">
+        <label>
+          <span>Цікавить пакет *</span>
+          <select name="package" required>
+            <option value=""   disabled selected hidden>Оберіть…</option>
+            <option>Start</option>
+            <option>Pro</option>
+            <option>Enterprise</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Тип демо *</span>
+          <div class="demo-radio">
+            <label><input type="radio" name="type" value="Live call" required><i></i>Live-call</label>
+            <label><input type="radio" name="type" value="Sandbox"><i></i>Sandbox</label>
+            <label><input type="radio" name="type" value="On-site"><i></i>On-site</label>
+          </div>
+        </label>
+
+        <label>
+          <span>Бажана дата/час</span>
+          <input type="datetime-local" name="date">
+        </label>
+
+        <label class="demo-span2">
+          <span>Деталі / коментар</span>
+          <textarea name="note" rows="3" placeholder="Що саме хочете побачити на демо?"></textarea>
+        </label>
+      </div>
+
+      <button class="btn demo-submit" type="submit">Надіслати заявку</button>
+      <p class="demo-status" hidden>Дякуємо! Ми зв’яжемося з вами протягом 4 годин.</p>
+    </form>
+
+  </div>
+</section>
+  <footer class="apple-footer">
+    <div class="footer-copy">© 2025 TechSolutions Inc.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechSolutions — Про нас</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <style>
+  .faq-section {padding: 80px 6vw; max-width: 900px; margin: 0 auto;}
+  .faq-title   {font:700 clamp(28px,4vw,42px)/1.2 var(--apple-font,"SF Pro Display",sans-serif);
+                text-align:center; margin-bottom:48px; color:#1d1d1f;}
+
+  .faq-item      {border-bottom: 1px solid #e5e5ea;}
+  .faq-question  {cursor:pointer; padding:22px 0; display:flex; justify-content:space-between;
+                  align-items:center; font-size:18px; font-weight:600; color:#1d1d1f;}
+  .faq-question svg {flex:0 0 20px; transition:.35s transform;}
+  .faq-answer    {max-height:0; overflow:hidden; font-size:16px; line-height:1.55;
+                  color:#565656; transition:max-height .45s ease; padding-right:24px;}
+
+  .faq-item.open .faq-answer {max-height:600px;}
+  .faq-item.open .faq-question svg {transform:rotate(90deg);}
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div id="navOverlay" class="nav-overlay"></div>
+    <a href="index.html" class="logo" aria-label="На головну">TS</a>
+
+    <button id="navToggle" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+    <nav>
+        <a href="index.html"     class="mega-link" data-pane="home">Головна</a>
+  <a href="about.html"     class="mega-link" data-pane="about">Про нас</a>
+  <a href="services.html"  class="mega-link" data-pane="services">Послуги</a>
+  <a href="contacts.html"  class="mega-link" data-pane="contacts">Контакти</a>
+  <a href="portfolio.html" class="mega-link" data-pane="por">Портфоліо</a>
+  <a href="news.html"      class="mega-link" data-pane="news">Новини</a>
+    </nav>
+  </header>
+
+<div id="mega-menu" class="mega-menu">
+    <div class="mega-inner">    
+
+        <div class="mega-pane" data-pane="home">
+            <h3>Головна</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="about">
+            <h3>Про нас</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="services">
+            <h3>Послуги</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="contacts">
+            <h3>Контакти</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+        
+        <div class="mega-pane" data-pane="por">
+            <h3>Портфоліо</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+
+        <div class="mega-pane" data-pane="news">
+            <h3>Новини</h3>
+            <ul><li><a href="#">Дізнатися більше</a></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="mega-overlay" class="mega-overlay"></div>
+
+  <section class="parallax-banner banner-dev">
+    <div class="hero-inner">
+      <h1>Хто ми такі?</h1>
+      <p>TechSolutions — команда інженерів, яка любить складні задачі</p>
+    </div>
+  </section>
+
+  <section class="faq-section reveal-up">
+    <h2 class="faq-title">Часті запитання</h2>
+
+    <article class="faq-item">
+      <button class="faq-question">
+        <span>Які технології ви використовуєте у проектах?</span>
+        <svg width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="m6 4 4 4-4 4"/></svg>
+      </button>
+      <div class="faq-answer">
+        Ми працюємо з AWS та Google Cloud, використовуємо Docker, Kubernetes,
+        Terraform та сучасний стек — React / Next, Node.js, PostgreSQL, MongoDB.
+      </div>
+    </article>
+
+    <article class="faq-item">
+      <button class="faq-question">
+        <span>Чи надаєте ви цілодобову підтримку?</span>
+        <svg width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="m6 4 4 4-4 4"/></svg>
+      </button>
+      <div class="faq-answer">
+        Так. У нас три Service Desk-центри (США, ЄС, Азія) і власний SOC,
+        тому реагуємо на інциденти у межах 15 хвилин, 24 / 7 / 365.
+      </div>
+    </article>
+
+    <article class="faq-item">
+      <button class="faq-question">
+        <span>Скільки триває розробка корпоративного сайту «під ключ»?</span>
+        <svg width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="m6 4 4 4-4 4"/></svg>
+      </button>
+      <div class="faq-answer">
+        Базовий сайт ми піднімаємо за 3–4 тижні: аналіз, дизайн, front-/back-end,
+        devops, SEO-оптимізація та ‎CI/CD. Для великих проєктів терміни
+        уточнюємо після безкоштовного аудиту.
+      </div>
+    </article>
+
+    <article class="faq-item">
+      <button class="faq-question">
+        <span>Чи працюєте ви з проєктами, що вже існують?</span>
+        <svg width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="m6 4 4 4-4 4"/></svg>
+      </button>
+      <div class="faq-answer">
+        Так, 55 % нашого портфоліо — це рефакторинг legacy-систем,
+        міграції у хмару та оптимізація CI / CD-процесів.
+      </div>
+    </article>
+  </section>
+
+  <footer class="apple-footer">
+    <div class="footer-copy">© 2025 TechSolutions Inc.</div>
+  </footer>
+
+  <script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const open = btn.closest('.faq-section').querySelector('.faq-item.open');
+      if (open && open !== btn.parentElement) open.classList.remove('open');
+
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+  </script>
+</body>
+</html>
