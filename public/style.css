@@ -57,10 +57,10 @@ body {
 
 .parallax-banner.reveal { opacity: 1; }
 
-.hero         { background-image: url('img/parallax1.jpg'); }
-.banner-dev   { background-image: url('img/parallax2.jpg'); }
+.hero         { background-image: url('img/parallax1.webp'); }
+.banner-dev   { background-image: url('img/parallax2.webp'); }
 .banner-footer{
-  background-image: url('img/parallax3.jpg');
+  background-image: url('img/parallax3.webp');
   height: 60vh;
 }
 
@@ -274,7 +274,7 @@ body {
 }
 
 .smart-bg {
-  background-image: url('img/parallax2.jpg');
+  background-image: url('img/parallax2.webp');
   background-attachment: fixed;
 }
 
@@ -1084,7 +1084,7 @@ body {
 }
 
 .banner-partners{
-  background-image: url('img/parallax3.jpg');
+  background-image: url('img/parallax3.webp');
   background-position:center;
   background-size:cover;
   background-attachment:fixed;
@@ -1400,7 +1400,7 @@ main.page       { flex:1 0 auto; }
 
 body.contacts-page .contact-hero{
   height:55vh;
-  background:url('img/parallax2.jpg') center/cover fixed;
+  background:url('img/parallax2.webp') center/cover fixed;
   position:relative;
 }
 body.contacts-page .contact-hero::before{
