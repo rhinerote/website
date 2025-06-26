@@ -1,12 +1,12 @@
 // server/db.js
 const { MongoClient } = require('mongodb');
 
-// бере URI з змінної середовища, а локально — з файла .env
-const uri = process.env.MONGODB_URI;         
-
-const client = new MongoClient(uri, { serverApi: { version: '1', strict: true } });
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
+const client = new MongoClient(uri);
 
 module.exports = async () => {
-  if (!client.topology?.isConnected()) await client.connect();
-  return client.db().collection('messages'); // ← techsolutions з URI
+  await client.connect();
+  // якщо в URI уже вказана БД ─ цей рядок просто поверне її
+  const db = client.db('techsolutions');
+  return db.collection('messages');
 };
