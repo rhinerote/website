@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+.DS_Store
+.claude/
+
+# Особисті ревʼю-файли від помічника
+REVIEW*.md
+WEBDPrct9.docx
