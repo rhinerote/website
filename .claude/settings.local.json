@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "PowerShell($lines = Get-Content 'C:\\\\Users\\\\User\\\\Documents\\\\Claude\\\\Projects\\\\Університет\\\\web\\\\public\\\\portfolio.html' -TotalCount 8 -Encoding UTF8; $lines | ForEach-Object { Write-Output $_ })",
+      "Bash(git rm *)",
+      "Bash(git add *)"
+    ]
+  }
+}
