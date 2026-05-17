@@ -4,7 +4,8 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/resize-images.js",
+    "test": "node --check server/server.js && node --check public/script.js && echo 'Syntax OK'"
   },
   "keywords": [],
   "author": "",

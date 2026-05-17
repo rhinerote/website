@@ -42,6 +42,21 @@ app.delete('/api/messages/:id', async (req, res) => {
   res.sendStatus(204);
 });
 
+// CREATE demo request
+app.post('/api/demo', async (req, res) => {
+  try {
+    const { MongoClient } = require('mongodb');
+    const client = new MongoClient(process.env.MONGODB_URI || 'mongodb://localhost:27017');
+    await client.connect();
+    const collection = client.db('techsolutions').collection('demo_requests');
+    const result = await collection.insertOne({ ...req.body, createdAt: new Date() });
+    res.status(201).json({ ok: true, id: result.insertedId });
+  } catch (err) {
+    console.error('Demo request error:', err);
+    res.status(500).json({ ok: false, error: 'Could not save request' });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Сервер запущено на http://localhost:${port}`);
 });
