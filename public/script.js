@@ -80,10 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
     msgs
       .filter(m => m.firstName || m.lastName)
       .forEach(({ _id, text, firstName = "", lastName = "", avatarUrl }) => {
+        const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="%23d2d2d7"/><text x="50%25" y="55%25" text-anchor="middle" font-family="Arial" font-size="28" fill="%23fff">?</text></svg>';
         const card = document.createElement("article");
         card.className = "testimonial";
         card.innerHTML = `
-          <img class="avatar" src="${avatarUrl || "img/avatar-default.jpg"}" alt="">
+          <img class="avatar" src="${avatarUrl || defaultAvatar}" alt="">
           <svg class="quotes" viewBox="0 0 32 32" aria-hidden="true">
             <path d="M14 4h-6l-6 10v14h12V14H8.6l3.4-6h2V4zm20 0h-6l-6 10v14h12V14h-5.4l3.4-6h2V4z"/>
           </svg>
